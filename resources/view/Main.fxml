@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controller.MainController" spacing="8">
+    <padding>
+        <Insets top="10.0" right="10.0" bottom="10.0" left="10.0"/>
+    </padding>
+    <HBox spacing="10">
+        <Label text="Category:"/>
+        <ComboBox fx:id="categoryComboBox"/>
+        <Label text="Show:"/>
+        <ComboBox fx:id="statusFilterCombo"/>
+    </HBox>
+    <TableView fx:id="taskTableView" VBox.vgrow="ALWAYS" prefWidth="700">
+        <columns>
+            <TableColumn fx:id="titleColumn" text="Title" prefWidth="150" />
+            <TableColumn fx:id="categoryColumn" text="Category" prefWidth="100" />
+            <TableColumn fx:id="dueColumn" text="Due Date" prefWidth="100" />
+            <TableColumn fx:id="priorityColumn" text="Priority" prefWidth="80"/>
+            <TableColumn fx:id="completedColumn" text="Completed" prefWidth="80"/>
+            <TableColumn fx:id="overdueColumn" text="Overdue" prefWidth="60"/>
+        </columns>
+    </TableView>
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="addBtn" text="Add Task" onAction="#handleAddTask"/>
+        <Button fx:id="editBtn" text="Edit Task" onAction="#handleEditTask"/>
+        <Button fx:id="deleteBtn" text="Delete Task" onAction="#handleDeleteTask"/>
+        <Button fx:id="markCompleteBtn" text="Toggle Complete" onAction="#handleMarkComplete"/>
+    </HBox>
+</VBox>
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controller.MainController" spacing="8">
+    <padding>
+        <Insets top="10.0" right="10.0" bottom="10.0" left="10.0"/>
+    </padding>
+    <HBox spacing="10">
+        <Label text="Category:"/>
+        <ComboBox fx:id="categoryComboBox"/>
+    </HBox>
+    <HBox spacing="10">
+        <ListView fx:id="taskListView" VBox.vgrow="ALWAYS" prefWidth="200"/>
+        <VBox spacing="6">
+            <Label text="Title:"/>
+            <Label fx:id="titleLabel"/>
+            <Label text="Description:"/>
+            <Label fx:id="descLabel" wrapText="true"/>
+            <Label text="Due:"/>
+            <Label fx:id="dueLabel"/>
+            <Label text="Priority:"/>
+            <Label fx:id="priorityLabel"/>
+            <Label text="Completed:"/>
+            <Label fx:id="completedLabel"/>
+            <Label text="Category:"/>
+            <Label fx:id="categoryLabel"/>
+        </VBox>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="addBtn" text="Add Task" onAction="#handleAddTask"/>
+        <Button fx:id="editBtn" text="Edit Task" onAction="#handleEditTask"/>
+        <Button fx:id="deleteBtn" text="Delete Task" onAction="#handleDeleteTask"/>
+        <Button fx:id="markCompleteBtn" text="Mark Complete" onAction="#handleMarkComplete"/>
+    </HBox>
+</VBox>
+
+ -->

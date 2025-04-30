@@ -1,0 +1,12 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "C:/PRAKSHIT/VS CODE/openjfx-21.0.5_windows-x64_bin-sdk/javafx-sdk-21.0.5/lib/**/*.jar"
+    ],
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.resourcePaths": [
+        "resources"
+    ]
+}

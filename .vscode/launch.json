@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch ToDoApp",
+            "request": "launch",
+            "mainClass": "ToDoApp",
+            "vmArgs": "--module-path C:/PRAKSHIT/VS CODE/openjfx-21.0.5_windows-x64_bin-sdk/javafx-sdk-21.0.5/lib --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
+
+// java --module-path "C:\PRAKSHIT\VS CODE\openjfx-21.0.5_windows-x64_bin-sdk\javafx-sdk-21.0.5\lib" --add-modules javafx.controls,javafx.fxml -cp "out;lib\sqlite-jdbc-3.49.1.0.jar;resources" ToDoApp
